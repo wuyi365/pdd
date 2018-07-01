@@ -1,0 +1,28 @@
+GET http://apiv4.yangkeduo.com/api/oakstc/v14/goods/1199816488?goods_id=1199816488&from=0&pdduid= HTTP/1.1
+Referer: Android
+X-PDD-QUERIES: width=720&height=1280&net=1&brand=Xiaomi&model=Redmi+4&osv=6.0.1&appv=4.2.0&pl=2
+ETag: Cb4b30kC
+User-Agent: android Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36  phh_android_version/4.2.0 phh_android_build/228842 phh_android_channel/xm
+AccessToken: 
+Content-Type: application/json;charset=UTF-8
+lat: 
+Host: apiv4.yangkeduo.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Cookie: api_uid=rBQRoVrHN7EFfWD25q3IAg==; JSESSIONID=8FFD8D167D2E39D24209FE2B7307C359
+
+
+
+GET http://apiv3.yangkeduo.com/v3/operation/14/groups?opt_type=1&offset=0&sort_type=DEFAULT&size=50&pdduid= HTTP/1.1
+Referer: Android
+X-PDD-QUERIES: width=720&height=1280&net=1&brand=Xiaomi&model=Redmi+4&osv=6.0.1&appv=4.4.0&pl=2
+ETag: Cb4b30kC
+User-Agent: android Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36  phh_android_version/4.4.0 phh_android_build/228842 phh_android_channel/xm
+AccessToken: 
+Content-Type: application/json;charset=UTF-8
+lat: 
+Host: apiv3.yangkeduo.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Cookie: api_uid=rBQ5SFr9mqgnmC7/YUsxAg==
+

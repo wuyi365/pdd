@@ -32,11 +32,13 @@ class PddSpider(scrapy.Spider):
         # last = self.last
 
         size = 1000
-        for category_id in range(0,3001):
+        for category_id in range(0,2501):
         #for category_id in category_ids:
-            for good_type in range(30):
+            for good_type in range(2):
                 #good_ids = self.get_goods_id_from_category(category_id, good_type, 1000)
                 request_url_category = 'http://apiv4.yangkeduo.com/operation/' + str(category_id) + '/groups?opt_type=' + str(good_type) + '&offset=0&size=' + str(size) + '&pdduid='
+                #request_url_category = 'http://apiv3.yangkeduo.com/v3/operation/' + str(category_id) + '/groups?opt_type=' + str(good_type) + '&offset=0&sort_type=DEFAULT&size=' + str(size) + '&pdduid='
+
                 yield scrapy.Request(url=request_url_category, callback=self.parse, meta={'category_id': category_id},)
 
 
@@ -59,6 +61,8 @@ class PddSpider(scrapy.Spider):
         for goods in goods_list:
             goods_id = goods['goods_id']
             url = 'http://apiv2.yangkeduo.com/api/oak/v6/goods/'+ str(goods_id)+ '?goods_id=' + str(goods_id) + '&pdduid='
+            #url = 'http://apiv4.yangkeduo.com/api/oakstc/v14/goods/1199816488?goods_id=1199816488&from=0&pdduid='
+            #url = 'http://apiv4.yangkeduo.com/api/oakstc/v14/goods/'+ str(goods_id)+ '?goods_id=' + str(goods_id) + '&from=0&pdduid='
 
 
             yield scrapy.Request(url=url, callback=self.parse_goods, meta={'goods_id': goods_id},)
